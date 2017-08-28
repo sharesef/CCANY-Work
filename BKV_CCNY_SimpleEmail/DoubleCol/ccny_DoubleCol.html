@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<!-- utf-8 works for most cases -->
+<meta name="viewport" content="width=device-width">
+<!-- Forcing initial-scale shouldn't be necessary -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Use the latest (edge) version of IE rendering engine -->
+<meta name="x-apple-disable-message-reformatting">
+<!-- Disable auto-scale in iOS 10 Mail entirely -->
+<title></title>
+<!-- The title tag shows in email notifications, like Android 4.4. -->
+
+<!-- Web Font / @font-face : BEGIN -->
+<!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+
+<!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+<!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+<!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+<!--[if !mso]><!-->
+        <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+<!-- Web Font / @font-face : END -->
+
+<!-- CSS Reset -->
+<style>
+/* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html, body {
+	margin: 0 auto !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+        * {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+	margin:0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+        table, td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+table table table {
+	table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+	-ms-interpolation-mode:bicubic;/* display: block;  - commented out 040717*/
+}
+/* What it does: A work-around for iOS meddling in triggered links. */
+        .mobile-link--footer a, a[x-apple-data-detectors] {
+	color:inherit !important;
+	text-decoration: underline !important;
+}
+</style>
+
+<!-- Progressive Enhancements -->
+<style>
+/* What it does: Hover styles for buttons */
+        .button-td, .button-a {
+	transition: all 100ms ease-in;
+}
+.button-td:hover, .button-a:hover {
+	background: #555555 !important;
+	border-color: #555555 !important;
+}
+
+        /* Media Queries */
+
+        @media only screen and (max-width: 560px) {
+img.logo {
+	margin: 0 auto !important;
+	float:none !important;
+	padding-left:none !important;
+}
+img.donate {
+	margin: 0 auto !important;
+	float:none !important;
+	padding-right:0px !important;
+}
+img.button {
+	margin: 0 auto !important;
+	float:none !important;
+	padding-left:none !important;
+}
+}
+ @media screen and (max-width: 560px) {
+/* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+.fluid {
+	width: 100% !important;
+	max-width: 100% !important;
+	height: auto !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+/* What it does: Forces table cells into full-width rows. */
+.stack-column, .stack-column-center {
+	display: block !important;
+	width: 100% !important;
+	max-width: 100% !important;
+	direction: ltr !important;
+  padding:0 !important;
+}
+/* And center justify these ones. */
+.stack-column-center {
+	text-align: center !important;
+}
+/* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+.center-on-narrow {
+	text-align: center !important;
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	float: none !important;
+}
+table.center-on-narrow {
+	display: inline-block !important;
+}
+}
+</style>
+</head>
+<body bgcolor="#222222" style="padding:0; margin:0; width:100%;">
+<center style="width: 100%; background: #786f6c;">
+  <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; font-family: sans-serif;">Needs are at a critical level, and your support will help us serve our fellow New Yorkers.</div>
+
+  <!--[if mso]>
+  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="680" align="center">
+  <tr>
+  <td>
+  <![endif]-->
+  <table class="fluid" width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:680px;" bgcolor="#FFFFFF">
+    <tr>
+      <td align="center" style="padding: 15px 0; text-align: center; border-top: 5px solid #0072c6;" bgcolor="#1e3964"><img align="center" style="display:inline-block;" src="http://d3n8a8pro7vhmx.cloudfront.net/themes/58fc17e1ae7c6a581200007e/attachments/original/1493048201/Logo600x150.png?1493048201" border="0" alt="Catholic Charities New York Logo" width="300" height="75" /></td>
+    </tr>
+    <tr>
+      <td><a href="https://2017annualfunddrive-catholiccharitiesnewyork.nationbuilder.com/2017_may_annual_fund_drive"><img align="center" class="fluid" style="display:block;" src="http://d3n8a8pro7vhmx.cloudfront.net/themes/5910d86dae7c6a18b4000004/attachments/original/1494276800/10108_3_1_05_15_17_Hero1.jpg?1494276800" border="0" alt="Annual Fund Drive Donate Now" width="680" /></a></td>
+    </tr>
+    <tr>
+      <td style="padding: 20px; text-align: center; font-family: sans-serif; font-size: 15px; line-height: 20px; color: white;" bgcolor="#e84c3d">The time for compassion is now.<br />The most vulnerable in our community are counting on us &mdash; and you.</td>
+    </tr>
+    <tr>
+      <td style="padding: 40px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+        <strong style="color: #1e3964;">{{ body }}</strong><br /><br />
+        Right now, I really need your help. Time is almost out for our 2017 Annual Fund Drive and I haven't heard from you!<br /><br />
+        I'm praying that you'll choose to renew your commitment now during our centennial year. The Annual Fund Drive is our most important fundraising effort of 2017, and it's coming to a close soon. Your support is urgently needed.<br /><br />
+        <strong style="color: #1e3964;">I'm concerned that, without the support of compassionate friends like you, we won't be able to help the poor and vulnerable who turn to us.</strong><br /><br />
+        But with your help, we'll feed the hungry, shelter the homeless, support the physically and emotionally challenged, and protect and nurture vulnerable children. Working together, we'll continue in our mission to strengthen families and resolve crises, to welcome and integrate immigrants and refugees and more.<br /><br />
+        Please <a href="https://2017annualfunddrive-catholiccharitiesnewyork.nationbuilder.com/2017_may_annual_fund_drive">make your centennial gift</a> to Catholic Charities right away. Your compassion is a great blessing. God bless you for responding today.<br /><br />
+        Gratefully yours,<br /><br />
+        <img src="http://d3n8a8pro7vhmx.cloudfront.net/catholiccharitiesnewyork/mailings/134/attachments/original/signature.gif?1492973656" alt="Author's Signature" width="146" height="50" style="display:block;" /><br />
+        Msgr. Kevin Sullivan<br />
+        Executive Director<br /><br />
+        P.S. The 2017 Annual Fund Drive is almost over—but I still need your help! <a href="https://2017annualfunddrive-catholiccharitiesnewyork.nationbuilder.com/2017_may_annual_fund_drive">Please give today</a>, so we can continue to provide for the neediest among us, now and for years to come.</td>
+    </tr>
+  </table>
+  <!--[if mso]>
+  </td>
+  </tr>
+  </table>
+  <![endif]-->
+
+  <!--[if mso]>
+  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="680" align="center">
+  <tr>
+  <td>
+  <![endif]-->
+        <table class="fluid" width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:680px; table-layout:fixed;" bgcolor="#FFFFFF">
+          <tr>
+            <td bgcolor="#ffffff" align="center" valign="top" style="border-bottom:1px solid #b5d6eb; padding:0 20px 0 20px;">
+
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="table-layout:fixed;">
+                <tr>
+                  <th valign="top" style="padding-right:10px; vertical-align:top;" class="stack-column" width="310">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td><a href="https://2017annualfunddrive-catholiccharitiesnewyork.nationbuilder.com/2017_may_annual_fund_drive"><img src="http://d3n8a8pro7vhmx.cloudfront.net/themes/5910d86dae7c6a18b4000004/attachments/original/1494276801/10108_3_1_05_15_17_Tw_Img_L_1.jpg?1494276801" width="310" border="0" alt="Legacy of Services" class="fluid" style="display:block;"></a></td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top: 30px;" >
+                          <table role="presentation" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="center-on-narrow">
+                              <tr>
+                                <td align="left" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding-bottom:20px;"><strong style="color:#1e3964;">By the Numbers</strong><br /><br />In the past year, Catholic Charities and YOU made this possible:<br /></td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left:10px;">
+                                  <table role="presentation" align="left" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td valign="top" width="10" style="font-family:sans-serif;font-size:15px;line-height:20px;color:#555555;">&bull;</td>
+                                      <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" valign="top"><strong>5.4 million Nutritious Meals</strong><br />served in parish & community food programs</td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left:10px;">
+                                  <table role="presentation" align="left" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td valign="top" width="10" style="font-family:sans-serif;font-size:15px;line-height:20px;color:#555555;">&bull;</td>
+                                      <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" valign="top"><strong>3,469 Individuals</strong><br />
+                                        helped with emergency financial assistance</td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left:10px;">
+                                  <table role="presentation" align="left" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td valign="top" width="10" style="font-family:sans-serif;font-size:15px;line-height:20px;color:#555555;">&bull;</td>
+                                        <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" valign="top"><strong>6,961 Individuals</strong><br />
+                                          helped with job training & placement</td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left:10px;">
+                                  <table role="presentation" align="left" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td valign="top" width="10" style="font-family:sans-serif;font-size:15px;line-height:20px;color:#555555;">&bull;</td>
+                                        <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" valign="top"><strong>8,837 Teenagers &amp; Adults</strong><br />
+                                          treated for substance abuse</td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left:10px;">
+                                  <table role="presentation" align="left" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td valign="top" width="10" style="font-family:sans-serif;font-size:15px;line-height:20px;color:#555555;">&bull;</td>
+                                        <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" valign="top"><strong>6,221 Individuals</strong><br />
+                                          provided emergency overnight shelter</td>
+                                    </tr>
+                                    </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left:10px;">
+                                  <table role="presentation" align="left" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td valign="top" width="10" style="font-family:sans-serif;font-size:15px;line-height:20px;color:#555555;">&bull;</td>
+                                      <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" valign="top"><strong>51,095 Individuals</strong><br />
+                                        connected to resources</td>
+                                  </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left:10px;">
+                                  <table role="presentation" align="left" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td valign="top" width="10" style="font-family:sans-serif;font-size:15px;line-height:20px;color:#555555;">&bull;</td>
+                                      <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" valign="top"><strong>41,521 Youth</strong><br />
+                                        participated in wholesome sports</td>
+                                  </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left:10px;">
+                                  <table role="presentation" align="left" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td valign="top" width="10" style="font-family:sans-serif;font-size:15px;line-height:20px;color:#555555;">&bull;</td>
+                                      <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" valign="top"><strong>6,349 Families</strong><br />
+                                        saved from becoming homeless</td>
+                                  </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left:10px;">
+                                  <table role="presentation" align="left" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td valign="top" width="10" style="font-family:sans-serif;font-size:15px;line-height:20px;color:#555555;">&bull;</td>
+                                      <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" valign="top"><strong>8,209 Visually &amp; Hearing Impaired</strong><br />
+                                        individuals participated in adaptive training</td>
+                                  </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left:10px;">
+                                  <table role="presentation" align="left" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td valign="top" width="10" style="font-family:sans-serif;font-size:15px;line-height:20px;color:#555555;">&bull;</td>
+                                      <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" valign="top"><strong>368 Children</strong><br />
+                                        adopted by loving families</td>
+                                  </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="left" style="padding-bottom:20px;"><a href="https://2017annualfunddrive-catholiccharitiesnewyork.nationbuilder.com/2017_may_annual_fund_drive"><img src="http://d3n8a8pro7vhmx.cloudfront.net/themes/5878edbd9bde690b4d000001/attachments/original/1492546474/givetoday_button.jpg?1492546474" border="0" alt="Give Today" width="144" height="42" style="display:block;" /></a></td>
+                              </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </th>
+
+                  <th valign="top" style="padding-left:10px; vertical-align:top;" class="stack-column" width="310">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td><a href="https://2017annualfunddrive-catholiccharitiesnewyork.nationbuilder.com/2017_may_annual_fund_drive"><img src="http://d3n8a8pro7vhmx.cloudfront.net/themes/5910d86dae7c6a18b4000004/attachments/original/1494276803/10108_3_1_05_15_17_Tw_Img_R_1.jpg?1494276803" width="310" border="0" alt="Good Stewardship" class="fluid" style="display:block;"></a></td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top: 30px;" valign="top">
+                          <table role="presentation" width="100%" align="center" style="text-align: center; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" border="0" cellspacing="0" cellpadding="0" class="center-on-narrow">
+                            <tr>
+                              <td align="left" style="font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; padding-bottom:20px;"><strong style="color:#1e3964;">Your Gift at Work</strong></td>
+                            </tr>
+                              <tr>
+                                <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" valign="top"><img src="http://d3n8a8pro7vhmx.cloudfront.net/themes/5910d86dae7c6a18b4000004/attachments/original/1494513740/10108_3_1_05_15_17_Tw_Img_R_2a.jpg?1494513740" width="282" border="0" alt="Your Gift at Work" class="fluid" style="display:block;"></td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; max-width: 600px;" valign="top"><strong>Protecting & Nurturing<br />
+                                  Children & Youth:</strong> 31%</td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; max-width: 600px;" valign="top"><strong>Feeding the Hungry<br />
+                                  & Sheltering the Homeless:</strong> 23%</td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; max-width: 600px;" valign="top"><strong>Welcoming & Integrating<br />
+                                  Immigrants & Refugees:</strong> 6%</td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; max-width: 600px;" valign="top"><strong>Strengthening Families<br />
+                                  & Resolving Crises: </strong>23%</td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 16px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; max-width: 600px;" valign="top"><strong>Supporting the Physically<br />
+                                  & Emotionally Challenged: </strong>18%</td>
+                              </tr>
+                              <tr>
+                                <td align="left" style="padding-bottom:20px;"><a href="https://2017annualfunddrive-catholiccharitiesnewyork.nationbuilder.com/2017_may_annual_fund_drive"><img src="http://d3n8a8pro7vhmx.cloudfront.net/themes/5878edbd9bde690b4d000001/attachments/original/1492546475/makeyourgift_button.jpg?1492546475" border="0" alt="Make Your Gift" width="144" height="42" style="display:block;" /></a></td>
+                              </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </th>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+        <!--[if mso]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+
+        <!--[if mso]>
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="680" align="center">
+        <tr>
+        <td>
+        <![endif]-->
+        <table class="fluid" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+          <tr>
+            <td bgcolor="#1e3964" style="padding: 15px; text-align: center; border-top: 5px solid #0072c6; color:white; font-family: sans-serif;"><a href="https://www.facebook.com/CatholicCharitiesNY"><img src="http://d3n8a8pro7vhmx.cloudfront.net/themes/58fc17e1ae7c6a581200007e/attachments/original/1492961245/facebook.png?1492961245" width="44" height="44" alt="Catholic Charities Facebook page" border="0" style="background: #1e3964; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; margin: 0 auto;"></a> <a href="https://twitter.com/CathCharitiesNY"><img src="http://d3n8a8pro7vhmx.cloudfront.net/themes/58fc17e1ae7c6a581200007e/attachments/original/1492961245/twitter.png?1492961245" width="44" height="44" alt="Catholic Carities Twitter account" border="0" style="background: #1e3964; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; margin: 0 auto;"></a> <a href="https://www.youtube.com/user/CatholicCharitiesNY"><img src="http://d3n8a8pro7vhmx.cloudfront.net/themes/58fc17e1ae7c6a581200007e/attachments/original/1492961245/youtube.png?1492961245" width="44" height="44" alt="Catholic Charities Youtube account" border="0" style="background: #1e3964; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; margin: 0 auto;"></a> <br />
+              <br />
+              <b>Catholic Charities Archdiocese of New York</b><br />
+              <i>1011 First Avenue, 11th Floor, New York, NY 10022</i><br />
+              Toll Free Help Line: (888) 744-7900<br />
+              <br />
+              <br />
+              © 2017 Catholic Charities. All rights reserved. <br />
+              Click <a href="{{ settings.site.unsubscribe_url }}" style="color:#ffffff;">here</a> to unsubscribe.<br />
+              <br />
+              <br /></td>
+          </tr>
+        </table>
+        <!--[if mso]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+
+</center>
+</body>
+</html>

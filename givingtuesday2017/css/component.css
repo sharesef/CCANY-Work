@@ -32,7 +32,7 @@
 	left: 0;
 	padding: 20px;
 	background: #2c3f52;
-	color: #ed4e6e;
+	color: rgba(255,255,255,0.95);
 }
 
 .grid figcaption h3 {
@@ -47,11 +47,12 @@
 
 .grid figcaption a {
 	text-align: center;
-	padding: 5px 10px;
-	border-radius: 2px;
-	display: inline-block;
-	background: #ed4e6e;
-	color: #fff;
+	background-color: #0072c6;
+    border-radius: 5px;
+    color: #fff;
+    padding: 4px 12px;
+    display: inline-block;
+    border-bottom: solid 4px #0039a9;
 }
 
 /* Individual Caption Styles */

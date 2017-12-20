@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MZXZJX');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>{{ page_title }}</title>
+	<!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7097774/703248/css/fonts.css" />
+	<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="theme.scss" rel="stylesheet">
+    <link href="layout.css" rel="stylesheet">
+
+    {{ content_for_header }}
+
+    <script type="text/javascript">
+      NB.appConfig.userIsLoggedIn = {{request.logged_in?}};
+    </script>
+
+  </head>
+  <body class="aware-theme v2-theme {{ page.page_class_name }} page-{{ request.template | replace: '_', '-' }} js">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZXZJX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    {% include "nav" %}
+  </div>
+    <div id="masthead" class="justborder"></div>
+	<div id="primarycontent">
+		<div class="whitesection">
+			<div class="inner clearfix">
+				<div class="contentleft">
+					<h1 class="lg">{{ page_title }}</h1>
+
+					{% if request.is_sidebar? %}
+        {% include "columns_2" %}
+        {% else %}
+        {% include "columns_1" %}
+        {% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- .main-container -->
+
+    <div id="footer">
+		<div class="inner clearfix">
+			<div id="footerleft">
+				<p>
+					<a class="desktoponly" href="http://catholiccharitiesny.org/"><img id="footerlogo" src="logo.png" width="244" height="119"></a>
+					<a class="mobileonly" href="http://catholiccharitiesny.org/"><img id="footermobilelogo" src="mobilelogo.png" width="244" height="119"></a>
+				</p>
+	    		<div class="block clearfix block-140 block-footer_message" id="block-footer_message-140">
+					<div class="blockin">
+						{{ content_for_footer }}
+						<p><strong>Catholic Charities Archdiocese of New York</strong><br />
+						1011 First Avenue, 11th Floor<br />
+						New York, NY 10022<br />
+						Toll Free Help Line (888) 744-7900
+						</p>
+	 					<div class="blockfooter"></div>
+					</div>
+				</div>
+				<p>&copy;2015 Catholic Charities.<br>All rights reserved.</p>
+			</div>
+		<div id="footerright">
+			<div class="topnav">
+				<div class="block clearfix block-142 block-menu" id="block-menu-142">
+					<div class="blockin">
+						<h2>Footer 1</h2>
+						<ul class="menu">
+							<li class="first leaf depth-1"><span class="arrow"></span><a href="http://catholiccharitiesny.org/find-help" title="">Find Help</a></li>
+							<li class="first leaf depth-1"><span class="arrow"></span><a href="http://catholiccharitiesny.org/what-we-do" title="What We Do">What We Do</a>
+               {% comment %}<ul class="menu">
+							<li class="first leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/what-we-do/protecting-nurturing-children-youth" title="Protecting &amp; Nurturing Children &amp; Youth">Protecting &amp; Nurturing Children &amp; Youth</a></li>
+							<li class="leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/what-we-do/feeding-hungry-sheltering-homeless" title="Feeding the Hungry &amp; Sheltering the Homeless">Feeding the Hungry &amp; Sheltering the Homeless</a></li>
+							<li class="leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/what-we-do/strengthening-families-resolving-crises" title="Strengthening Families &amp; Resolving Crises">Strengthening Families &amp; Resolving Crises</a></li>
+							<li class="leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/what-we-do/supporting-physically-emotionally-challenged" title="Supporting the Physically &amp; Emotionally Challenged">Supporting the Physically &amp; Emotionally Challenged</a></li>
+							<li class="last leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/what-we-do/welcoming-integrating-immigrants-refugees" title="Welcoming &amp; Integrating Immigrants &amp; Refugees">Welcoming &amp; Integrating Immigrants &amp; Refugees</a></li>
+							</ul>{% endcomment %}
+              <li class="first leaf depth-1"><span class="arrow"></span><a href="http://catholiccharitiesny.org/about-us" title="About Us">About Us</a>
+								{% comment %}<ul class="menu">
+									<li class="first leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/about-us/leadership" title="Leadership">Leadership</a></li>
+									<li class="leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/about-us/board-trustees" title="Board Of Trustees">Board Of Trustees</a></li>
+									<li class="leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/about-us/senior-management" title="Senior Management">Senior Management</a></li>
+									<li class="leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/about-us/our-story" title="Our Story">Our Story</a></li>
+									<li class="leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/about-us/annual-report" title="Annual Report">Annual Report</a></li>
+									<li class="leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/jobs" title="Jobs">Jobs</a></li>
+								</ul>{% endcomment %}
+							</li>
+							<li class="last leaf depth-1"><span class="arrow"></span><a href="http://catholiccharitiesny.org/our-agencies" title="">Our Agencies</a></li>
+						</ul>
+						<div class="blockfooter"></div>
+					</div>
+				</div>
+			</div>
+			<div class="topnav">
+				<div class="block clearfix block-143 block-menu" id="block-menu-143">
+					<div class="blockin">
+						<h2>Footer 2</h2>
+						<ul class="menu">
+            <li class="first leaft depth-1"><span class="arrow"></span><a href="http://catholiccharitiesny.org/get-involved" title="Get Involved">Get Involved</a>
+              {% comment %}<ul class="menu">
+                <li class="first leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/get-involved/other-ways-give" title="Ways To Give">Ways To Give</a></li>
+                <li class="leaf depth-2"><span class="arrow"></span><a href="http://www.catholiccharitiesnyvolunteer.org/" title="Volunteer">Volunteer</a></li>
+                <li class="leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/get-involved/cardinals-committee-charity" title="Cardinal Committee For Charity">Cardinal's Committee For Charity</a></li>
+                <li class="leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/get-involved/catholic-renewal" title="Catholic Renewal">Catholic Renewal</a></li>
+                <li class="leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/get-involved/feeding-our-neighbors" title="Feeding Our Neighbors">Feeding Our Neighbors</a></li>
+                <li class="leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/get-involved/junior-board" title="Junior Board">Junior Board</a></li>
+                <li class="leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/get-involved/signature-events" title="Signature Events">Signature Events</a></li>
+                <li class="leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/get-involved/st-nicholas-project" title="St. Nicholas Project">St. Nicholas Project</a></li>
+                <li class="last leaf depth-2"><span class="arrow"></span><a href="http://catholiccharitiesny.org/get-involved/2015-tcs-new-york-city-marathon" title="2015 TCS New York City Marathon">2015 TCS New York City Marathon</a></li>
+              </ul>{% endcomment %}
+            </li>
+            <li class="last leaf depth-1"><span class="arrow"></span><a href="http://www.catholiccharitiesnyvolunteer.org/" title="Volunteer" target="_blank">Volunteer</a></li>
+            <li class="first leaf depth-1"><span class="arrow"></span><a href="https://catholiccharitiesnewyork.nationbuilder.com/donate" title="">Donate</a></li>
+            <li class="leaf depth-1"><span class="arrow"></span><a href="http://catholiccharitiesny.org/blog" title="">Blog</a></li>
+            </ul>
+						<div class="blockfooter"></div>
+					</div>
+				</div>
+			</div>
+			<div class="topnav">
+				<div class="block clearfix block-144 block-menu" id="block-menu-144">
+					<div class="blockin">
+						<h2>Footer 3</h2>
+						<ul class="menu">
+            <li class="leaf depth-1"><span class="arrow"></span><a href="http://www.justloveblog.org" target="_blank">Just Love</a></li>
+            <li class="leaf depth-1"><span class="arrow"></span><a href="http://catholiccharitiesny.org/events" title="">Events</a></li>
+            <li class="leaf depth-1"><span class="arrow"></span><a href="http://catholiccharitiesny.org/news" title="">News</a></li>
+            <li class="leaf depth-1"><span class="arrow"></span><a href="http://cyony.org/" title="CYO" target="_blank">CYO</a></li>
+						</ul>
+						<div class="blockfooter"></div>
+					</div>
+				</div>
+			</div>
+			<div class="topnav">
+				<div class="block clearfix block-145 block-menu" id="block-menu-145">
+					<div class="blockin">
+						<h2>Footer 4</h2>
+							<ul class="menu">
+								<li class="leaf depth-1"><span class="arrow"></span><a href="http://catholiccharitiesny.org/log-in">Log In</a></li>
+                <li class="last leaf depth-1"><span class="arrow"></span><a href="http://catholiccharitiesny.org/privacy-policy" title="">Privacy Policy</a></li>
+							</ul>
+							<div class="blockfooter"></div>
+						</div>
+					</div>
+					<p id="footersocial">
+						<a href="http://www.facebook.com/CatholicCharitiesNY" target="_blank" class="fb icon"></a>
+						<a href="http://twitter.com/CathCharitiesNY" target="_blank" class="tw icon"></a>
+						<a href="http://www.youtube.com/user/CatholicCharitiesNY" target="_blank" class="yt icon"></a>
+            <a href="https://www.instagram.com/cathcharitiesny/" target="_blank" class="ig icon"></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+    <script src="bootstrap.js"></script>
+	  <script type="text/javascript" src="jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="jquery.validationEngine.js"></script>
+<script type="text/javascript" src="site.js"></script>
+
+
+  </body>
+</html>
